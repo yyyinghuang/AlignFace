@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AlignFace — Human-Aligned Face Similarity</title>
+  <meta name="description" content="AlignFace: Human-Aligned Face Similarity Metric with Interpretable Concept Relations. ACM Multimedia 2026 · National University of Singapore.">
+  <meta name="theme-color" content="#ac3267">
+  <meta property="og:title" content="AlignFace — Human-Aligned Face Similarity">
+  <meta property="og:description" content="A face similarity metric grounded in human perception, with interpretable concept relations. ACM Multimedia 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yyyinghuang.github.io/AlignFace/">
+  <meta property="og:image" content="https://yyyinghuang.github.io/AlignFace/assets/teaser.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav"><a class="wordmark" href="./">Align<span>Face</span><span class="dot">.</span></a><a href="https://github.com/yyyinghuang/AlignFace">GitHub <span aria-hidden="true">↗</span></a></header>
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <p class="eyebrow">ACM MULTIMEDIA 2026</p>
+      <h1 id="title">Align<span>Face</span></h1>
+      <h2>Human-Aligned Face Similarity Metric<br class="desktop"> with Interpretable Concept Relations</h2>
+      <p class="authors">Ying Huang<sup>*</sup><span>Wencan Zhang<sup>*</sup></span><span>Brian Y. Lim</span></p>
+      <p class="affiliation">National University of Singapore</p>
+      <p class="equal">* Equal contribution</p>
+      <div class="actions"><a class="button primary" href="assets/AlignFace-paper.pdf">Read the paper <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://github.com/yyyinghuang/AlignFace">GitHub <span aria-hidden="true">↗</span></a></div>
+      <p class="release">Model code &amp; weights coming soon</p>
+    </section>
+    <section class="overview" aria-labelledby="idea">
+      <div class="section-heading"><p class="eyebrow">THE IDEA</p><h2 id="idea">Face similarity, through human eyes.</h2></div>
+      <p class="intro">What makes two faces look alike? AlignFace connects facial attributes to human similarity judgments, making the contribution of each attribute explicit—and accounting for differences across observer groups.</p>
+      <figure><a href="assets/teaser.png" aria-label="View the paper overview figure at full resolution"><img src="assets/teaser.png" width="1268" height="483" alt="Paper overview: AlignFace compares faces through interpretable attributes such as pupillary distance and lip color, models their nonlinear contributions, and aligns similarity predictions with human judgments."></a><figcaption>From facial attributes to perceptual similarity. Overview from our paper.</figcaption></figure>
+      <div class="principles">
+        <article><span class="number">01</span><h3>Interpretable by design</h3><p>A concept bottleneck expresses similarity through meaningful featural and configural facial attributes.</p></article>
+        <article><span class="number">02</span><h3>Cognitively grounded</h3><p>A neural generalized additive model captures how attribute differences shape perception nonlinearly.</p></article>
+        <article><span class="number">03</span><h3>Human aligned</h3><p>Modeling observer groups accounts for variation in perception, including own-group effects.</p></article>
+      </div>
+    </section>
+    <section class="dataset" aria-labelledby="facets"><div><p class="eyebrow">INTRODUCING FACETS</p><h2 id="facets">Grounded in human judgments.</h2><p>A dataset of face triplets with overall and attribute-level similarity judgments.</p></div><div class="stats"><div><strong>20</strong><span>facial attributes</span></div><div><strong>9.36k</strong><span>overall similarity ratings</span></div><div><strong>73.32k</strong><span>attribute similarity ratings</span></div></div></section>
+    <section class="coming"><p class="eyebrow">WHAT’S NEXT</p><h2>More to come.</h2><p>Model code and pretrained weights will be shared here.<br>Follow the repository for future releases.</p><a class="text-link" href="https://github.com/yyyinghuang/AlignFace">Visit the repository <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer><span class="wordmark">Align<span>Face</span>.</span><span>ACM Multimedia 2026 · National University of Singapore</span><a href="assets/AlignFace-paper.pdf">Paper ↗</a></footer>
+</body>
+</html>
