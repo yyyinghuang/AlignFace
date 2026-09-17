@@ -14,4 +14,4 @@ The website is in `docs/`, with no build tools or dependencies. Open `docs/index
 
 To publish, push these files to `main`, then select **Settings → Pages → Build and deployment → Source → GitHub Actions**. Run the **Deploy paper website** workflow if needed. Only `docs/` is deployed.
 
-Edit `docs/index.html` for content and `docs/style.css` for appearance. The paper's pink is `#E46E9F`, with `#AC3267` used for readable text and buttons.
+Edit `docs/index.html` for content and `docs/style.css` for appearance. The theme pink is `#D5759E` (RGB 213, 117, 158).
