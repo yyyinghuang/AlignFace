@@ -1,10 +1,11 @@
 # AlignFace
 
 **Human-Aligned Face Similarity Metric with Interpretable Concept Relations**  
-Ying Huang*, Wencan Zhang*, Brian Y. Lim · National University of Singapore  
-ACM Multimedia 2026 · *Equal contribution
+Ying Huang, Wencan Zhang, Brian Y. Lim · National University of Singapore
 
-[Project website](https://yyyinghuang.github.io/AlignFace/) · [Paper](docs/assets/AlignFace-paper.pdf) · [Technical guide](docs/usage.md)
+**ACM Multimedia 2026**
+
+[Project website](https://yyyinghuang.github.io/AlignFace/) · [Paper](https://arxiv.org/pdf/2608.14130) · [Technical guide](docs/usage.md)
 
 This working tree integrates the research website and Python inference package. Code licensing and weight redistribution review are still pending; see [license and third-party notices](#license-and-third-party-notices).
 
@@ -28,17 +29,18 @@ python -m pip install -e .
 Already downloaded the release ZIP? Enter its `open-source` folder and run
 `python -m pip install -e .`. Model weights are included; no API key is needed.
 
-## First test — no photos needed
+## First test
 
 ```bash
 python examples/quickstart.py --verify
 python -m unittest discover -s tests -v
 ```
 
-The demo uses three fictional male heads: A is the reference, B is an edited
-variation, and C has different facial features. All are aligned on white with no
-neck or shoulders. Verification prints `PASS`; the default model scores A–B at
-about **0.9692** and A–C at **0.5264**.
+The demo compares three synthetic faces:
+
+- **A:** reference; **B:** edited variation; **C:** different face.
+- Default scores: **A–B ≈ 0.9692**, **A–C ≈ 0.5264**.
+- Successful verification prints `PASS`.
 
 <img src="examples/images/face_a.png" alt="Reference A" width="140"> <img src="examples/images/face_b.png" alt="Edited variation B" width="140"> <img src="examples/images/face_c.png" alt="Different male face C" width="140">
 
@@ -57,10 +59,10 @@ scores = [r.similarity for r in results]  # Same order as pairs
 print(results[0].concepts)               # similarity + global weight
 ```
 
-`level="concept"` returns all concepts; `metric.concept_names` lists their names.
-Models: `overall`, `asian`, `white`. Backbones: `flip` (default), `clip`.
-Use aligned, masked face images; [raw-photo preprocessing](docs/usage.md#preprocessing-before-editing)
-is available separately.
+- `level="concept"` returns all concepts; `metric.concept_names` lists their names.
+- **Models:** `overall`, `asian`, `white`.
+- **Backbones:** `flip` (default), `clip`.
+- **Input:** aligned, masked face images; [raw-photo preprocessing](docs/usage.md#preprocessing-before-editing) is available separately.
 
 ## Use in training
 
@@ -98,14 +100,8 @@ does not establish downstream training effectiveness.
 - `configs/`, `checkpoints/`: six model configurations and Git LFS weights.
 - `examples/`, `tests/`, `scripts/`: synthetic demos, checks, and evaluation utilities.
 - `docs/`: static project website and paper; GitHub Actions deploys only this directory.
-- `promotion/`: existing promotional materials.
 
 Raw research face images and human-study tables are not redistributed. See [third-party notices](#license-and-third-party-notices).
-
-## Website development
-
-Run `python -m http.server 8000 --directory docs` and visit `http://localhost:8000`.
-The existing Pages workflow publishes website changes pushed to `main` when GitHub Pages uses GitHub Actions.
 
 ## License and third-party notices
 
