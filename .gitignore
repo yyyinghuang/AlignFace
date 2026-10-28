@@ -1,6 +1,17 @@
 # Dataset images are local-only and must not be redistributed.
-/AlignFace/
 /CelebA/
 
 # macOS metadata
 .DS_Store
+
+# Python development artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+
+# Generated validation reports (retain only provenance and license in assets)
+/assets/*validation*.json

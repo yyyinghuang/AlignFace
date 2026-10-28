@@ -1,0 +1,86 @@
+[
+  {
+    "source": "Checkpoint_Final_Version_0602/FLIP_P01son_FaceCLIP-base-32/stage1/best_model/model.pt",
+    "destination": "checkpoints/overall/flip/stage1.safetensors",
+    "bytes": 626291701,
+    "source_sha256": "704bf9e9e0f764fb57145c7f430ad8560292d3151aafb9d4dca7b8c3128abfda",
+    "sha256": "25d55313b6715bb298f4bf4f8bdb17b7f6ab25c460db203c4362e7130de5cfd5"
+  },
+  {
+    "source": "Checkpoint_Final_Version_0602/FLIP_P01son_FaceCLIP-base-32/stage2_monotonic_gam_attr_softmax/best_model.pt",
+    "destination": "checkpoints/overall/flip/stage2.safetensors",
+    "bytes": 4720,
+    "source_sha256": "bbc4f49ec755de3972fdf7761915f4e1013178b091cb0d603c438afee68464ff",
+    "sha256": "45c3f3a2c3c968f0a22d96a2ff451e882941ff2ea626255e16b3d770e1e46dd9"
+  },
+  {
+    "source": "Checkpoint_Final_Version_0602/CLIP_openai_clip-vit-base-patch32/stage1/best_model/model.pt",
+    "destination": "checkpoints/overall/clip/stage1.safetensors",
+    "bytes": 626291701,
+    "source_sha256": "daa7642655277ee95a388c86591dddb635eb6cc3645697c534696ccae703584c",
+    "sha256": "987fb6658b4facde94db9553b2e322f75294c6d36cc34dd1c23d1e856c739201"
+  },
+  {
+    "source": "Checkpoint_Final_Version_0602/CLIP_openai_clip-vit-base-patch32/stage2_monotonic_gam_attr_softmax/best_model.pt",
+    "destination": "checkpoints/overall/clip/stage2.safetensors",
+    "bytes": 4720,
+    "source_sha256": "276eee6a3a052c8c6836b6351502999fa528a6250aa3387dd618a8c87a98c5d5",
+    "sha256": "62d67867e5aff3b63faffb8d3c12ed5c0a2d359873988f97500f826199cbdd81"
+  },
+  {
+    "source": "Checkpoint_Final_Version_Asian_0602/FLIP_P01son_FaceCLIP-base-32/stage1/best_model/model.pt",
+    "destination": "checkpoints/asian/flip/stage1.safetensors",
+    "bytes": 626291701,
+    "source_sha256": "96101a78fad0e7c16c8c672277aff7b86387815ca6f24357c666e2a3752bde6d",
+    "sha256": "3b630d814ce8886d0fd26fba3faa77f439399e1497e606267e850047ac029232"
+  },
+  {
+    "source": "Checkpoint_Final_Version_Asian_0602/FLIP_P01son_FaceCLIP-base-32/stage2_monotonic_gam_attr_softmax/best_model.pt",
+    "destination": "checkpoints/asian/flip/stage2.safetensors",
+    "bytes": 4720,
+    "source_sha256": "3cb49c31768ed8204c2b0c4f6808a1cab0cfc482a456d647c81c773a24838918",
+    "sha256": "34de0f1985c1265c291c543f8e1b048632080429526a70efedd0a8c61547c519"
+  },
+  {
+    "source": "Checkpoint_Final_Version_Asian_0602/CLIP_openai_clip-vit-base-patch32/stage1/best_model/model.pt",
+    "destination": "checkpoints/asian/clip/stage1.safetensors",
+    "bytes": 626291701,
+    "source_sha256": "036b17fe0533db3a68d80709fb6bcc06b995a40bc584baeb50b72ef0e189c204",
+    "sha256": "6e1356909a095154d82713f42397c1df1c2abf969ff9263826cfb1dd5232152b"
+  },
+  {
+    "source": "Checkpoint_Final_Version_Asian_0602/CLIP_openai_clip-vit-base-patch32/stage2_monotonic_gam_attr_softmax/best_model.pt",
+    "destination": "checkpoints/asian/clip/stage2.safetensors",
+    "bytes": 4720,
+    "source_sha256": "d081b6169a97c37a796d26b4376fe14e17a0856b0089e9ed2a45a62085702db1",
+    "sha256": "7c847cc4c99c84729fe3ae9b641442832bd53231eba7515e11172beba528ef9a"
+  },
+  {
+    "source": "Checkpoint_Final_Version/FLIP_P01son_FaceCLIP-base-32/stage1/best_model/model.pt",
+    "destination": "checkpoints/white/flip/stage1.safetensors",
+    "source_sha256": "f32d722ba0c325f0e2baabbb04d217ca9ced8c6d2a863f1d45ea757703f87f7d",
+    "sha256": "024e61311c172bed2d6f04250d8413063cf7a6fc8123ee04a833fa1479a42485",
+    "bytes": 626291701
+  },
+  {
+    "source": "Checkpoint_Final_Version/FLIP_P01son_FaceCLIP-base-32/stage2_monotonic_gam_attr_softmax/best_model.pt",
+    "destination": "checkpoints/white/flip/stage2.safetensors",
+    "source_sha256": "c7a6c8d35023eec497e121545dfd3b9ce0dce678d59102779d8a10c902c61117",
+    "sha256": "ae2d72b9637325b1f77ce85dd3bed65561ef65e9307201c567ce6d6cac64558c",
+    "bytes": 4720
+  },
+  {
+    "source": "Checkpoint_Final_Version/CLIP_openai_clip-vit-base-patch32/stage1/best_model/model.pt",
+    "destination": "checkpoints/white/clip/stage1.safetensors",
+    "source_sha256": "297ef0035ad0f8a75306b5294050b898a3746dee20db420b9c017526a6e0eaae",
+    "sha256": "f181451b082078fcb724a354d0608e99de2e317f198e6c5f76ce994e161c81aa",
+    "bytes": 626291701
+  },
+  {
+    "source": "Checkpoint_Final_Version/CLIP_openai_clip-vit-base-patch32/stage2_monotonic_gam_attr_softmax/best_model.pt",
+    "destination": "checkpoints/white/clip/stage2.safetensors",
+    "source_sha256": "967f71675294d4b7a38e4713bf517280cb84293bbc4312b10f07dc37756f402d",
+    "sha256": "ba0a96af74b388d64bd830ea34b80f7763a45b1ad4172fa4233b957ed7258141",
+    "bytes": 4720
+  }
+]

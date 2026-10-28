@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alignface"
+version = "0.1.0"
+description = "Interpretable concept-based face comparison with the final AlignFace architecture"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch==2.1.0", "torchvision==0.16.0", "transformers==4.46.3", "safetensors>=0.4,<1", "numpy<2", "Pillow>=9"]
+
+[project.optional-dependencies]
+preprocessing = ["opencv-python<4.12", "scipy", "dlib", "pyfacer==0.0.5"]
+
+[tool.setuptools]
+packages = ["alignface"]
+
+[tool.setuptools.data-files]
+"share/alignface/checkpoints/asian/clip" = ["checkpoints/asian/clip/stage1.json", "checkpoints/asian/clip/stage1.safetensors", "checkpoints/asian/clip/stage2.json", "checkpoints/asian/clip/stage2.safetensors", "checkpoints/asian/clip/calibration.json"]
+"share/alignface/checkpoints/asian/flip" = ["checkpoints/asian/flip/stage1.json", "checkpoints/asian/flip/stage1.safetensors", "checkpoints/asian/flip/stage2.json", "checkpoints/asian/flip/stage2.safetensors", "checkpoints/asian/flip/calibration.json"]
+"share/alignface/checkpoints/overall/clip" = ["checkpoints/overall/clip/stage1.json", "checkpoints/overall/clip/stage1.safetensors", "checkpoints/overall/clip/stage2.json", "checkpoints/overall/clip/stage2.safetensors", "checkpoints/overall/clip/calibration.json"]
+"share/alignface/checkpoints/overall/flip" = ["checkpoints/overall/flip/stage1.json", "checkpoints/overall/flip/stage1.safetensors", "checkpoints/overall/flip/stage2.json", "checkpoints/overall/flip/stage2.safetensors", "checkpoints/overall/flip/calibration.json"]
+"share/alignface/configs" = ["configs/variants.json"]
+"share/alignface/configs/clip" = ["configs/clip/config.json", "configs/clip/merges.txt", "configs/clip/preprocessor_config.json", "configs/clip/special_tokens_map.json", "configs/clip/tokenizer.json", "configs/clip/tokenizer_config.json", "configs/clip/vocab.json"]
+"share/alignface/configs/flip" = ["configs/flip/config.json", "configs/flip/merges.txt", "configs/flip/preprocessor_config.json", "configs/flip/special_tokens_map.json", "configs/flip/tokenizer.json", "configs/flip/tokenizer_config.json", "configs/flip/vocab.json"]
+"share/alignface/checkpoints/white/flip" = ["checkpoints/white/flip/stage1.json", "checkpoints/white/flip/stage1.safetensors", "checkpoints/white/flip/stage2.json", "checkpoints/white/flip/stage2.safetensors", "checkpoints/white/flip/calibration.json"]
+"share/alignface/checkpoints/white/clip" = ["checkpoints/white/clip/stage1.json", "checkpoints/white/clip/stage1.safetensors", "checkpoints/white/clip/stage2.json", "checkpoints/white/clip/stage2.safetensors", "checkpoints/white/clip/calibration.json"]

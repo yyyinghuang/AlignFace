@@ -1,0 +1,38 @@
+{
+  "overall": {
+    "flip": {
+      "directory": "checkpoints/overall/flip",
+      "model_name": "P01son/FaceCLIP-base-32",
+      "config": "configs/flip"
+    },
+    "clip": {
+      "directory": "checkpoints/overall/clip",
+      "model_name": "openai/clip-vit-base-patch32",
+      "config": "configs/clip"
+    }
+  },
+  "asian": {
+    "flip": {
+      "directory": "checkpoints/asian/flip",
+      "model_name": "P01son/FaceCLIP-base-32",
+      "config": "configs/flip"
+    },
+    "clip": {
+      "directory": "checkpoints/asian/clip",
+      "model_name": "openai/clip-vit-base-patch32",
+      "config": "configs/clip"
+    }
+  },
+  "white": {
+    "flip": {
+      "directory": "checkpoints/white/flip",
+      "model_name": "P01son/FaceCLIP-base-32",
+      "config": "configs/flip"
+    },
+    "clip": {
+      "directory": "checkpoints/white/clip",
+      "model_name": "openai/clip-vit-base-patch32",
+      "config": "configs/clip"
+    }
+  }
+}

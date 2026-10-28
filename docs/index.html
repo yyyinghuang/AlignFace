@@ -26,7 +26,7 @@
       <p class="affiliation">National University of Singapore</p>
       <p class="equal">* Equal contribution</p>
       <div class="actions"><a class="button primary" href="assets/AlignFace-paper.pdf">Read the paper <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://github.com/yyyinghuang/AlignFace">GitHub <span aria-hidden="true">↗</span></a></div>
-      <p class="release">Model code &amp; weights coming soon</p>
+      <p class="release">Python package integration in preparation · Release licensing under review</p>
     </section>
     <section class="overview" aria-labelledby="idea">
       <div class="section-heading"><p class="eyebrow">THE IDEA</p><h2 id="idea">Face similarity, through human eyes.</h2></div>
@@ -39,6 +39,26 @@
       </div>
     </section>
     <section class="dataset" aria-labelledby="facets"><div><p class="eyebrow">INTRODUCING FACETS</p><h2 id="facets">Grounded in human judgments.</h2><p>A dataset of face triplets with overall and attribute-level similarity judgments.</p></div><div class="stats"><div><strong>20</strong><span>facial attributes</span></div><div><strong>9.36k</strong><span>overall similarity ratings</span></div><div><strong>73.32k</strong><span>attribute similarity ratings</span></div></div></section>
+    <section class="overview" aria-labelledby="use">
+      <div class="section-heading"><p class="eyebrow">USE ALIGNFACE</p><h2 id="use">From a face pair to 20 concepts.</h2></div>
+      <p class="intro">Compare aligned faces, inspect individual concepts, or use a frozen differentiable metric in your training loop. The package includes overall, Asian, and White variants with CLIP and FLIP backbones.</p>
+      <div class="principles">
+        <article><span class="number">01</span><h3>Install</h3><p>Python 3.10 and Git LFS. These commands apply after the package and weights are released.</p><pre><code>git lfs install
+git clone https://github.com/yyyinghuang/AlignFace.git
+cd AlignFace
+git lfs pull
+python -m pip install -e .</code></pre></article>
+        <article><span class="number">02</span><h3>Compare</h3><pre><code>from alignface import AlignFace
+
+metric = AlignFace.from_pretrained("overall")
+result = metric.compare("a.jpg", "b.jpg")
+print(result.similarity)</code></pre><p>Use aligned, masked RGB faces. Higher scores indicate greater similarity; scores are not identity-match probabilities.</p></article>
+        <article><span class="number">03</span><h3>Explore</h3><p>Run the synthetic-face demo, compare batches, or select an individual concept such as eye color.</p><pre><code>python examples/quickstart.py --verify
+python examples/training_step.py</code></pre></article>
+      </div>
+      <p>Pair-level GAM inference is experimental. Gradient support does not establish downstream training effectiveness. Code licensing and weight redistribution review are pending.</p>
+      <div class="actions"><a class="button secondary" href="https://github.com/yyyinghuang/AlignFace#readme">Installation &amp; API guide ↗</a><a class="button secondary" href="https://github.com/yyyinghuang/AlignFace#license-and-third-party-notices">Release &amp; third-party notices ↗</a></div>
+    </section>
   </main>
   <footer><span class="wordmark">Align<span>Face</span>.</span><span>ACM Multimedia 2026 · National University of Singapore</span><a href="assets/AlignFace-paper.pdf">Paper ↗</a></footer>
 </body>
