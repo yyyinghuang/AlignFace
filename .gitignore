@@ -1,0 +1,6 @@
+# Dataset images are local-only and must not be redistributed.
+/AlignFace/
+/CelebA/
+
+# macOS metadata
+.DS_Store
